@@ -10,3 +10,9 @@
 .default--global-header .default--container {
     padding: 0px 10px;
 }
+
+.global-header-navigation {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
