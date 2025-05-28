@@ -1,0 +1,27 @@
+.hero {
+    width: 100%;
+}
+
+.ad-hero {
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    max-height: 130px;
+    overflow: hidden;
+}
+
+.ad-hero img {
+    max-height: 130px;
+    width: 80%;
+    object-fit: cover;
+}
+
+.hero .flex-direction--row {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
