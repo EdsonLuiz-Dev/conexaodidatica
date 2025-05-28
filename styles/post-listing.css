@@ -1,0 +1,21 @@
+/* hover effect posts */
+.post-listing {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    border-radius: 10px;
+    border: solid 1px #00304930;
+}
+
+.post-listing--content {
+    padding: 15px;
+}
+
+.post-listing--image {
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.post-listing:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
