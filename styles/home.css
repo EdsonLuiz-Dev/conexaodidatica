@@ -8,11 +8,12 @@
     justify-content: flex-end;
     max-height: 130px;
     overflow: hidden;
+    max-width: 650px;
 }
 
 .ad-hero img {
     max-height: 130px;
-    width: 80%;
+    width: 100%;
     object-fit: cover;
 }
 
