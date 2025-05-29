@@ -5,14 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Conexão Didática - Materiais</title>
     <link rel="stylesheet" href="/styles/globals.css"/>
-    <link rel="stylesheet" href="/styles/home.css"/>
-    <link rel="stylesheet" href="/styles/post-listing.css"/>
     <link rel="stylesheet" href="/styles/footer.css"/>
     <link rel="stylesheet" href="/styles/header.css"/>
+    <link rel="stylesheet" href="/styles/materiais.css"/>
+    <link rel="stylesheet" href="/styles/post-listing.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <!-- header -->
     <section class="default--global-header default--center-content">
         <div class="default--container justify--space-between">
             <div class="align--center">
@@ -30,9 +29,7 @@
             </div>
         </div>
     </section>
-    <!-- header end -->
 
-    <!-- hero -->
     <section class="default--hero">
         <div class="flex-direction--row align--center justify--space-between">
             <h1 class="default--h1">Materiais</h1>
@@ -41,63 +38,82 @@
             </div>
         </div>
     </section>
-    <!-- hero end -->
 
-    <section class="main-body">
-        <article class="post-listing">
-            <a href="#">
-                <img class="post-listing--image" src="/assets/lemure-ad.jpg" alt="" />
-                <div class="post-listing--content">
-                    <h3>Post Title</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-            </a>
-        </article>
-        <article class="post-listing">
-            <a href="#">
-                <img class="post-listing--image" src="/assets/lemure-ad.jpg" alt="" />
-                <div class="post-listing--content">
-                    <h3>Post Title</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-            </a>
-        </article>
-        <article class="post-listing">
-            <a href="#">
-                <img class="post-listing--image" src="/assets/lemure-ad.jpg" alt="" />
-                <div class="post-listing--content">
-                    <h3>Post Title</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-            </a>
-        </article>
-        <article class="post-listing">
-            <a href="#">
-                <img class="post-listing--image" src="/assets/lemure-ad.jpg" alt="" />
-                <div class="post-listing--content">
-                    <h3>Post Title</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-            </a>
-        </article>
-        <article class="post-listing">
-            <a href="#">
-                <img class="post-listing--image" src="/assets/lemure-ad.jpg" alt="" />
-                <div class="post-listing--content">
-                    <h3>Post Title</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-            </a>
-        </article>
-        <article class="post-listing">
-            <a href="#">
-                <img class="post-listing--image" src="/assets/lemure-ad.jpg" alt="" />
-                <div class="post-listing--content">
-                    <h3>Post Title</h3>
-                    <p>Lorem ipsum dolor sit amet</p>
-                </div>
-            </a>
-        </article>
+    <section class="main-body-flex">
+        <section class="materials-listing flex-direction--row">
+            <div class="materials-listing--filter-wrapper">
+                <h2>Filtros</h2>
+                <ul class="materials-listing--filter-list">
+                    <li><input type="checkbox" value="matematica">Matemática</li>
+                    <li><input type="checkbox" value="portugues">Português</li>
+                    <li><input type="checkbox" value="historia">História</li>
+                    <li><input type="checkbox" value="geografia">Geografia</li>
+                    <li><input type="checkbox" value="ciencias">Ciências</li>
+                </ul>
+            </div>
+            <div class="materials-listing--posts-wrapper">
+                <article class="materials-listing--post-listing matematica">
+                    <a href="#">
+                        <div class="materials-listing--post-listing-image">
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                        </div>
+                        <div class="materials-listing--post-listing-content">
+                            <h4>Matemática</h4>
+                            <h3>Post Title</h3>
+                            <p>Post excerpt</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="materials-listing--post-listing portugues">
+                    <a href="#">
+                        <div class="materials-listing--post-listing-image">
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                        </div>
+                        <div class="materials-listing--post-listing-content">
+                            <h4>Português</h4>
+                            <h3>Post Title</h3>
+                            <p>Post excerpt</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="materials-listing--post-listing historia">
+                    <a href="#">
+                        <div class="materials-listing--post-listing-image">
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                        </div>
+                        <div class="materials-listing--post-listing-content">
+                            <h4>História</h4>
+                            <h3>Post Title</h3>
+                            <p>Post excerpt</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="materials-listing--post-listing matematica geografia">
+                    <a href="#">
+                        <div class="materials-listing--post-listing-image">
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                        </div>
+                        <div class="materials-listing--post-listing-content">
+                            <h4>Matemática · Geografia</h4>
+                            <h3>Post Title</h3>
+                            <p>Post excerpt</p>
+                        </div>
+                    </a>
+                </article>
+                <article class="materials-listing--post-listing ciencias">
+                    <a href="#">
+                        <div class="materials-listing--post-listing-image">
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                        </div>
+                        <div class="materials-listing--post-listing-content">
+                            <h4>Ciências</h4>
+                            <h3>Post Title</h3>
+                            <p>Post excerpt</p>
+                        </div>
+                    </a>
+                </article>
+            </div>
+        </section>
     </section>
 
     <footer class="site-footer">
@@ -112,5 +128,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const checkboxes = document.querySelectorAll('.materials-listing--filter-list input[type="checkbox"]');
+        const posts = document.querySelectorAll('.materials-listing--post-listing');
+
+        function filterPosts() {
+            const activeFilters = Array.from(checkboxes)
+                .filter(checkbox => checkbox.checked)
+                .map(checkbox => checkbox.value);
+
+            posts.forEach(post => {
+                const matches = activeFilters.some(category => post.classList.contains(category));
+                post.style.display = activeFilters.length === 0 || matches ? 'block' : 'none';
+            });
+        }
+
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', filterPosts);
+        });
+
+        filterPosts();
+    });
+    </script>
 </body>
 </html>

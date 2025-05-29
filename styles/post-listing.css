@@ -2,7 +2,7 @@
 .post-listing {
     background-color: #f9f9f9;
     border-radius: 8px;
-    border: solid 1px #003049;
+    border: solid 1px #002f4954;
     overflow: hidden;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     transition: transform 0.2s ease;
@@ -23,4 +23,84 @@
 .post-listing:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* materials listing - página de cursos e materiais */
+.materials-listing {
+    width: 100%;
+    gap: 15px;
+}
+
+.materials-listing--filter-wrapper {
+    width: 20%;
+}
+
+.materials-listing--posts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    gap: 10px;
+}
+
+.materials-listing--filter-list {
+    list-style: none;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.materials-listing--filter-list li {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 1.2rem;
+}
+
+.materials-listing--post-listing a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin: auto;
+    min-height: 150px;
+    text-decoration: none;
+    color: inherit;
+    background-color: white;
+    transition: all ease 0.4s;
+}
+
+.materials-listing--post-listing-image {
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+}
+
+.materials-listing--post-listing-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.materials-listing--post-listing-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.materials-listing--post-listing-content h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.materials-listing--post-listing-content p {
+    margin: 0;
+    color: #555;
+}
+
+.materials-listing--post-listing:hover a {
+    transform: translateX(1%);
 }

@@ -18,6 +18,7 @@ html {
 h1, h2, h3, h4, p, a {
     font-family: 'Nunito', sans-serif;
     color: #003049;
+    margin: 0px !important;
 }
 
 .hero {
@@ -76,6 +77,20 @@ h1, h2, h3, h4, p, a {
     margin: 0 auto;
     padding: 40px 10px;
     flex: 1;
+}
+
+.main-body-flex {
+    display: flex;
+    width: 1250px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 40px 10px;
+    flex: 1;
+}
+
+.flex-direction--row {
+    display: flex;
+    flex-direction: row;
 }
 
 .default--hero .flex-direction--row {
