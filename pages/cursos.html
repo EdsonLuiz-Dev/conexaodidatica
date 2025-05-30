@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Conexão Didática - Cursos</title>
-    <link rel="stylesheet" href="/styles/globals.css"/>
-    <link rel="stylesheet" href="/styles/footer.css"/>
-    <link rel="stylesheet" href="/styles/header.css"/>
-    <link rel="stylesheet" href="/styles/materiais.css"/>
-    <link rel="stylesheet" href="/styles/post-listing.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/styles/globals.css" />
+    <link rel="stylesheet" href="/styles/footer.css" />
+    <link rel="stylesheet" href="/styles/header.css" />
+    <link rel="stylesheet" href="/styles/materiais.css" />
+    <link rel="stylesheet" href="/styles/post-listing.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;800;900&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
     <section class="default--global-header default--center-content">
         <div class="default--container justify--space-between">
@@ -23,7 +26,7 @@
                     <li><a href="/pages/materiais.html">Materiais</a></li>
                     <li><a href="/pages/sobre.html">Sobre</a></li>
                 </ul>
-           </div>
+            </div>
             <div class="align--center">
                 <input type="text" id="search" name="search" placeholder="Search" />
             </div>
@@ -55,60 +58,60 @@
                 <article class="materials-listing--post-listing matematica">
                     <a href="#">
                         <div class="materials-listing--post-listing-image">
-                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad">
                         </div>
                         <div class="materials-listing--post-listing-content">
                             <h4>Matemática</h4>
-                            <h3>Post Title</h3>
-                            <p>Post excerpt</p>
+                            <h3>Curso: Fundamentos da Aritmética</h3>
+                            <p>Conceitos básicos e aplicações para o ensino inicial.</p>
                         </div>
                     </a>
                 </article>
                 <article class="materials-listing--post-listing portugues">
                     <a href="#">
                         <div class="materials-listing--post-listing-image">
-                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad">
                         </div>
                         <div class="materials-listing--post-listing-content">
                             <h4>Português</h4>
-                            <h3>Post Title</h3>
-                            <p>Post excerpt</p>
+                            <h3>Curso: Redação para ENEM</h3>
+                            <p>Estratégias e estrutura textual para aumentar sua nota.</p>
                         </div>
                     </a>
                 </article>
                 <article class="materials-listing--post-listing historia">
                     <a href="#">
                         <div class="materials-listing--post-listing-image">
-                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad">
                         </div>
                         <div class="materials-listing--post-listing-content">
                             <h4>História</h4>
-                            <h3>Post Title</h3>
-                            <p>Post excerpt</p>
+                            <h3>Curso: Brasil Colônia em foco</h3>
+                            <p>Aprofundamento em temas essenciais do currículo escolar.</p>
                         </div>
                     </a>
                 </article>
                 <article class="materials-listing--post-listing matematica geografia">
                     <a href="#">
                         <div class="materials-listing--post-listing-image">
-                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad">
                         </div>
                         <div class="materials-listing--post-listing-content">
                             <h4>Matemática · Geografia</h4>
-                            <h3>Post Title</h3>
-                            <p>Post excerpt</p>
+                            <h3>Curso: Estatística aplicada à Geografia</h3>
+                            <p>Uma abordagem interdisciplinar com foco em dados e mapas.</p>
                         </div>
                     </a>
                 </article>
                 <article class="materials-listing--post-listing ciencias">
                     <a href="#">
                         <div class="materials-listing--post-listing-image">
-                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad"> 
+                            <img src="/assets/lemure-ad.jpg" alt="lemure-ad">
                         </div>
                         <div class="materials-listing--post-listing-content">
                             <h4>Ciências</h4>
-                            <h3>Post Title</h3>
-                            <p>Post excerpt</p>
+                            <h3>Curso: Ecossistemas brasileiros</h3>
+                            <p>Conheça a biodiversidade e os biomas do Brasil.</p>
                         </div>
                     </a>
                 </article>
@@ -130,27 +133,28 @@
     </footer>
 
     <script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const checkboxes = document.querySelectorAll('.materials-listing--filter-list input[type="checkbox"]');
-        const posts = document.querySelectorAll('.materials-listing--post-listing');
+        document.addEventListener('DOMContentLoaded', () => {
+            const checkboxes = document.querySelectorAll('.materials-listing--filter-list input[type="checkbox"]');
+            const posts = document.querySelectorAll('.materials-listing--post-listing');
 
-        function filterPosts() {
-            const activeFilters = Array.from(checkboxes)
-                .filter(checkbox => checkbox.checked)
-                .map(checkbox => checkbox.value);
+            function filterPosts() {
+                const activeFilters = Array.from(checkboxes)
+                    .filter(checkbox => checkbox.checked)
+                    .map(checkbox => checkbox.value);
 
-            posts.forEach(post => {
-                const matches = activeFilters.some(category => post.classList.contains(category));
-                post.style.display = activeFilters.length === 0 || matches ? 'block' : 'none';
+                posts.forEach(post => {
+                    const matches = activeFilters.some(category => post.classList.contains(category));
+                    post.style.display = activeFilters.length === 0 || matches ? 'block' : 'none';
+                });
+            }
+
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', filterPosts);
             });
-        }
 
-        checkboxes.forEach(checkbox => {
-            checkbox.addEventListener('change', filterPosts);
+            filterPosts();
         });
-
-        filterPosts();
-    });
     </script>
 </body>
+
 </html>
