@@ -1,0 +1,3 @@
+.post-template h2::not(.default--global-header), .post-template p {
+    padding-bottom: 20px;
+}

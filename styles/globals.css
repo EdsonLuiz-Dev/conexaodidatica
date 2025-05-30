@@ -93,6 +93,11 @@ h1, h2, h3, h4, p, a {
     flex-direction: row;
 }
 
+.flex-direction--col {
+    display: flex;
+    flex-direction: column;
+}
+
 .default--hero .flex-direction--row {
     max-width: 1250px;
     margin: 0 auto;
